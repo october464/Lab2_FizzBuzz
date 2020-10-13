@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Solve";
+}
+<h1>@ViewData["Title"]</h1>
+
+@*Step 1*@
+<form asp-action="Solve">
+    <div class="row">
+        <div class="col">
+            <input type="text" name="fizz" />
+        </div>
+        <div class="col">
+            <input type="text"  name="buzz"/>
+        </div>
+        <div class="col">
+           <button type="submit" class="btn btn-primary">Submit Me</button>
+        </div>
+    </div>
+</form>
+
+<hr />
+<div class="row">
+    <div class="col">
+        The Calculated output is: @ViewData["Output"]
+
+    </div>
+</div>
